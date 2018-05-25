@@ -1,9 +1,9 @@
 # AZCABÁN
-## MCD
+## CREATE TABLE'S
 
 ```
-drop table if exists delicte;
 drop table if exists condemna;
+drop table if exists delicte;
 drop table if exists permis;
 drop table if exists pres;
 drop table if exists [cel·la];
@@ -26,6 +26,7 @@ create table pres(
 	constraint pres_cela_fk
 		foreign key (id_cela)
 		references [cel·la] (id)
+		ON UPDATE CASCADE
 );
 
 create table permis(
@@ -39,24 +40,20 @@ create table permis(
 		references pres (id)
 );
 
-create table condemna(
-	dies_pel_delicte int not null,
-	id_pres int not null,
-	constraint condemna_pk
-		primary key (id_pres),
-	constraint condemna_pres_fk
-		foreign key (id_pres)
-		references pres (id)
-);
-
 create table delicte(
 	id int not null,
 	nom varchar(300) not null,
-	id_pres int not null,
 	constraint delicte_pk
-		primary key (id_pres,id),
-	constraint delicte_condemna_fk
-		foreign key (id_pres)
-		references pres (id)
+		primary key (id)
+);
+
+create table condemna(
+	dies_pel_delicte int not null,
+	id_delicte int not null,
+	constraint condemna_pk
+		primary key (id_delicte),
+	constraint condemna_delicte_fk
+		foreign key (id_delicte)
+		references delicte (id)
 );
 ```
