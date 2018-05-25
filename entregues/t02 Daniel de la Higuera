@@ -1,5 +1,5 @@
 
-```
+```sql
 create table pressos(
 número int not null,
 nom varchar(500) not null,
