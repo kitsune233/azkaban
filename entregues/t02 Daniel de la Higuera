@@ -51,4 +51,5 @@ constraint comdemnes_a_delictes_fk
 foreign key (códi_delicte)
 references delictes (códi)
 );
+
 ```
