@@ -1,11 +1,23 @@
 ```
 
+create table celles(
+número int not null,
+aforament int not null,
+núm_mòdul int not null,
+constraint celles_pk
+primary key (número),
+);
+
 create table pressos(
 número int not null,
 nom varchar(500) not null,
 data_ingrés datetime not null,
+num_cella int not null,
 constraint pressos_pk
-primary key (número)
+primary key (número),
+constraint pressos_a_celles_fk
+foreign key (num_cella)
+references celles (número)
 );
 
 create table delictes(
@@ -15,17 +27,7 @@ constraint delictes_pk
 primary key (códi)
 );
 
-create table celles(
-número int not null,
-aforament int not null,
-núm_mòdul int not null,
-número_pres int not null,
-constraint celles_pk
-primary key (número),
-constraint celles_a_pressos_fk
-foreign key (número_pres)
-references pressos (número)
-);
+
 
 create table permíssos(
 des_de datetime not null,
@@ -51,6 +53,7 @@ constraint comdemnes_a_delictes_fk
 foreign key (códi_delicte)
 references delictes (códi)
 );
+
 
 
 ```
