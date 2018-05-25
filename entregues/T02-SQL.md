@@ -1,7 +1,7 @@
 # AZCABÁN
 ## CREATE TABLE'S
 
-```
+```sql
 drop table if exists condemna;
 drop table if exists delicte;
 drop table if exists permis;
