@@ -12,7 +12,7 @@ Un permís comença en una data i finalitza en una altra data. No es poden sol·
 
 ## MCD
 
-T01 - Fes el MCD de dades.
+* T01 - Fes el MCD de dades.
 
 ## SQL
 
@@ -41,3 +41,6 @@ Fes les funcions:
   * Dia inici del permís
   
 
+# Entregues:
+
+Cal fer pull request amb el material dins la carpeta entregues. Ull! Els fitxers de la entrega ha de tenir com a prefix el nom de la tasca. Exemple: T01-MCD.odt
