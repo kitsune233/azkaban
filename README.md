@@ -16,7 +16,7 @@ Un permís comença en una data i finalitza en una altra data. No es poden sol·
 
 ## SQL
 
-* T02 - Fes el create table. En cas de canviar el nom d'una cel·la, aquest canvi es propagarà.
+* T02 - Fes el create table. En cas de canviar el número d'una cel·la, aquest canvi es propagarà.
 * T03 - Inserta les següents dades.
   * Carlotta Pinkstone. Des de 1 de gener de 2018
      * Estatuto Internacional del Secreto Mágico: 600 dies
