@@ -43,4 +43,4 @@ Fes les funcions:
 
 # Entregues:
 
-Cal fer pull request amb el material dins la carpeta entregues. Ull! Els fitxers de la entrega ha de tenir com a prefix el nom de la tasca. Exemple: T01-MCD.odt
+Cal fer pull request amb el material dins la carpeta entregues. Ull! Els fitxers de la entrega ha de tenir com a prefix el nom de la tasca. Exemple: T01-MCD.md
